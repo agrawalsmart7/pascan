@@ -131,7 +131,7 @@ def github_requests(url):
 	result = soup.find('table', class_="highlight tab-size js-file-line-container")
 	
 	
-	contents = "<style> body {background: #d0d3d4; } </style> " + " Resource URL: " + '<a href='+url+'>' + url + '</a>'+ "<br><br><br><style> .div2 {width:700px;height: 400px; padding: 50px; overflow: scroll; border: 1px solid black; background: #a39a98;}</style><div class='div2'>" + str(result) + "</div><br><br><br><br>"
+	contents = "<style> body {background: #d0d3d4; } </style> " + " Resource URL: " + '<a href='+url+'>' + url + '</a>'+ "<br><br><br><style> .div2 {width:900px;height: 200px; padding: 50px; overflow: scroll; border: 1px solid black; background: #cacbcf;}</style><div class='div2'>" + str(result) + "</div><br><br><br><br>"
 	
 	file.write(contents)
 
