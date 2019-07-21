@@ -183,15 +183,15 @@ def gitlab_parse():
 			print (crayons.green("Project name := ") + project_url)
 			
 			metadata = html.find('div', class_="description d-none d-sm-block append-right-default")
-			print ("Metadata detecting :- " + str(metadata))
+			print ("\t Metadata detecting :- " + str(metadata))
 			if metadata != None:
 				meta_data = metadata.get_text()
 				print (crayons.yellow("\n\t Project's Metadata BELOW: ") )
 				print (" \t ", meta_data)
-				file.write("<font color='green'>Project Found </font>: <a href='{0}'>".format(project_url)+ str(project_name) +"</a><br><br><font color='Black'>Metadata-for-above-Project </font> : <font color='green' >"+ str(meta_data) +"</font><br><br><br><br>")
+				file.write("\t <center><font color='green'>Project Found </font>: <a href='{0}'>".format(project_url)+ str(project_name) +"</a><br><br><font color='Black'>Metadata-for-above-Project </font> : <font color='green' >"+ str(meta_data) +"</font></center><br><br><br><br>")
 			else:
 
-				file.write("<font color='green'>Project Found </font>: <a href='{0}'>".format(project_url)+ str(project_name) +"</a><br><br>")
+				file.write("\t <center> <font color='green'>Project Found </font>: <a href='{0}'>".format(project_url)+ str(project_name) +"</a></center><br><br>")
 
 
 
