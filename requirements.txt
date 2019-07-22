@@ -7,6 +7,5 @@ colorama
 os
 re
 concurrent.futures
-concurrent.futures import ThreadPoolExecutor
 pathlib
 sys
