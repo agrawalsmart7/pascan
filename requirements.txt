@@ -1,11 +1,5 @@
 requests
-optparse
 bs4
-json
 crayons
 colorama
-os
-re
-concurrent.futures
 pathlib
-sys
